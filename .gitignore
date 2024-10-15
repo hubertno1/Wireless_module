@@ -1,0 +1,15 @@
+build
+.vscode
+sdkconfig.old
+
+# 忽略所有文件
+main/third_lib/nanopb/*
+
+# 保留特定库文件
+!main/third_lib/nanopb/pb_common.c
+!main/third_lib/nanopb/pb_common.h
+!main/third_lib/nanopb/pb_decode.c
+!main/third_lib/nanopb/pb_decode.h
+!main/third_lib/nanopb/pb_encode.c
+!main/third_lib/nanopb/pb_encode.h
+!main/third_lib/nanopb/pb.h

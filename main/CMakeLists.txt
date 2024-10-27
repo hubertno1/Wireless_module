@@ -52,5 +52,5 @@ idf_component_register(SRCS ${srcs} INCLUDE_DIRS ${include_dirs})
 
 # 设置特定源文件的编译选项
 set_source_files_properties("main.c" 
-    PROPERTIES COMPILE_FLAGS "-fsanitize=kernel-address")
+    PROPERTIES COMPILE_FLAGS "-fsanitize=kernel-address  -g -save-temps -fno-inline -O0")
 

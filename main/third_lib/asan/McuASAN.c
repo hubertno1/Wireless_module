@@ -12,6 +12,8 @@
 #include <stdbool.h>
 #include <stddef.h>
 #include <stdlib.h>
+#include "esp_log.h"
+#include "esp_debug_helpers.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -117,6 +119,13 @@ static bool SlowPathCheck(int8_t shadow_value, void *address, size_t kAccessSize
 static void ReportError(void *address, size_t kAccessSize, rw_mode_e mode) {
   McuLog_fatal("ASAN ptr failure: addr 0x%x, %s, size: %d", (unsigned int)address, mode==kIsRead?"read":"write", kAccessSize);
 //  __asm volatile("bkpt #0"); /* stop application if debugger is attached */
+
+  // Print the backtrace
+  esp_backtrace_print(16); // Adjust depth as needed
+
+  // Terminate the program
+  // abort();
+
 }
 
 static void CheckShadow(void *address, size_t kAccessSize, rw_mode_e mode) {

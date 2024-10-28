@@ -1,3 +1,4 @@
 [submodule "esp-idf"]
-	path = esp-idf
-	url = https://github.com/hubertno1/Wireless_module.git
+  path = esp-idf
+  url = https://github.com/hubertno1/esp-idf-custom.git
+  branch = custom_changes

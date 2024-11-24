@@ -81,9 +81,10 @@ void __asan_version_mismatch_check_v8(void) { NYI(); }
 
 /* see https://github.com/gcc-mirror/gcc/blob/master/libsanitizer/asan/asan_interface_internal.h */
 // static uint8_t shadow[McuASAN_CONFIG_APP_MEM_SIZE/8]; /* one shadow byte for 8 application memory bytes. A 1 means that the memory address is poisoned */
-extern uint8_t _shadow_start[];
-extern uint8_t _shadow_end[];
-static uint8_t *shadow = _shadow_start;
+// extern uint8_t _shadow_start[];
+// extern uint8_t _shadow_end[];
+// static uint8_t *shadow = _shadow_start;
+static uint8_t shadow[McuASAN_CONFIG_APP_MEM_SIZE/8] __attribute__((section(".dram0.shadow")));
 
 #if McuASAN_CONFIG_FREE_QUARANTINE_LIST_SIZE > 0
 static void *freeQuarantineList[McuASAN_CONFIG_FREE_QUARANTINE_LIST_SIZE];
@@ -269,7 +270,8 @@ void __asan_free(void *p) {
 #endif /* McuASAN_CONFIG_CHECK_MALLOC_FREE */
 
 void McuASAN_Init(void) {
-  size_t shadow_size = _shadow_end - _shadow_start;
+  // size_t shadow_size = _shadow_end - _shadow_start;
+  size_t shadow_size = sizeof(shadow);
   for(int i=0; i<shadow_size; i++) { /* initialize full shadow map */
     shadow[i] = -1; /* poison everything  */
   }

@@ -276,9 +276,9 @@ void McuASAN_Init(void) {
     shadow[i] = -1; /* poison everything  */
   }
   /* because the shadow is part of the memory area: poison the shadow */
-  for(int i=0; i<shadow_size; i+=8) {
-    PoisonShadowByte1Addr(&shadow[i]);
-  }
+  // for(int i=0; i<shadow_size; i+=8) {    /* This loop is commented out as it duplicates the functionality of the previous loop */
+  //  PoisonShadowByte1Addr(&shadow[i]);
+  // }
 #if McuASAN_CONFIG_FREE_QUARANTINE_LIST_SIZE > 0
   for(int i=0; i<McuASAN_CONFIG_FREE_QUARANTINE_LIST_SIZE; i++) {
     freeQuarantineList[i] = NULL;

@@ -1,0 +1,12 @@
+[/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/pb_decode.c:599]: (Warning) Common realloc mistake: 'ptr' nulled but not freed upon failure
+[/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/pb_decode.c:903]: (Serious) Comparing [field.pSize] to null at line 892 implies that [field.pSize ] might be null.Dereferencing null pointer [field.pSize].
+[/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/pb_encode.c:265]: (Serious) Null - checking [field.pSize] suggests that it may be null, but it has already been dereferenced at line 258.
+[/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/pb_encode.c:431]: (Serious) Null - checking [field.pSize] suggests that it may be null, but it has already been dereferenced at line 423.
+[/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/alltypes_pointer/decode_alltypes_pointer.c:138]: (Serious) Comparing [alltypes.oneof.oneof_msg1] to null at line 137 implies that [alltypes.oneof.oneof_msg1 ] might be null.Dereferencing null pointer [alltypes.oneof.oneof_msg1]. The error is in macros.
+[/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/alltypes_pointer/decode_alltypes_pointer.c:156]: (Serious) Comparing [alltypes.req_ds8] to null at line 155 implies that [alltypes.req_ds8 ] might be null.Dereferencing null pointer [alltypes.req_ds8]. The error is in macros.
+[/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/alltypes_pointer/decode_alltypes_pointer.c:160]: (Serious) Comparing [alltypes.req_intsizes] to null at line 159 implies that [alltypes.req_intsizes ] might be null.Dereferencing null pointer [alltypes.req_intsizes]. The error is in macros.
+[/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/common/malloc_wrappers.c:125]: (Warning) Common realloc mistake: 'buf' nulled but not freed upon failure
+[/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/fuzztest/validation.c:27]: (Serious) Comparing [iter.pSize] to null at line 19 implies that [iter.pSize ] might be null.Dereferencing null pointer [iter.pSize].
+[/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/mem_release/mem_release.c:79]: (Warning) Returning the address of a stack variable [ext2_dest].
+[/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/regression/issue_504/test.c:35]: (Warning) Memory leak: pStr
+() Tscancode cannot find all the include files (use --check-config for details)

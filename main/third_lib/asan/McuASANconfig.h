@@ -23,8 +23,13 @@
 #endif
 
 #ifndef McuASAN_CONFIG_APP_MEM_SIZE
-  #define McuASAN_CONFIG_APP_MEM_SIZE  (384*1024)
+  #define McuASAN_CONFIG_APP_MEM_SIZE  (264*1024)
   /*!< Memory size in bytes */
+#endif
+
+#ifndef McuASAN_CONFIG_SHADOW_MEM_START
+  #define McuASAN_CONFIG_SHADOW_MEM_START 0x3FCC2310
+  /*!< base address of shadow memory */
 #endif
 
 #if McuASAN_CONFIG_CHECK_MALLOC_FREE
@@ -34,7 +39,7 @@
 #endif
 
 #ifndef McuASAN_CONFIG_FREE_QUARANTINE_LIST_SIZE
-  #define McuASAN_CONFIG_FREE_QUARANTINE_LIST_SIZE  (8)
+  #define McuASAN_CONFIG_FREE_QUARANTINE_LIST_SIZE  (0)
   /*!< list of free blocks in quarantine until they are released. Use 0 for no list. */
 #endif
 

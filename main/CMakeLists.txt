@@ -1,6 +1,7 @@
 set(srcs "main.c")
 set(include_dirs ".")
 
+# 
 file(GLOB CABLEIO_SRCS "cableio/*.c"
                        "cableio/uart/*.c")
 list(APPEND srcs ${CABLEIO_SRCS})
@@ -53,4 +54,14 @@ idf_component_register(SRCS ${srcs} INCLUDE_DIRS ${include_dirs})
 # 设置特定源文件的编译选项
 set_source_files_properties("main.c" 
     PROPERTIES COMPILE_FLAGS "-fsanitize=kernel-address  -g -save-temps -fno-inline -O0")
+
+#set_source_files_properties("wireless/wifi_station/service/get_weather/get_weather.c"
+#    PROPERTIES COMPILE_FLAGS "-fsanitize=kernel-address -O0")
+
+#set_source_files_properties("wireless/wifi_station/wifi_station.c"
+#   PROPERTIES COMPILE_FLAGS "-fsanitize=kernel-address -O0")    
+
+set_source_files_properties("third_lib/asan/McuASAN.c"
+    PROPERTIES COMPILE_FLAGS "-g -save-temps")
+
 

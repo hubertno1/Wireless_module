@@ -1,0 +1,633 @@
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c:0:0: [31minformation:[39m Too many #ifdef configurations - cppcheck only checks 12 of 135 configurations. Use --force to check all configurations. [toomanyconfigs][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c:686:0: [31minformation:[39m Skipping configuration 'SDCC;__SDCC_VERSION_MAJOR' since the value of '__SDCC_VERSION_MAJOR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked][0m
+  COMPILER_VERSION_MAJOR,
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c:686:0: [31minformation:[39m Skipping configuration 'SDCC;__SDCC_VERSION_MAJOR;__SDCC_VERSION_MAJOR' since the value of '__SDCC_VERSION_MAJOR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked][0m
+  COMPILER_VERSION_MAJOR,
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp:0:0: [31minformation:[39m Too many #ifdef configurations - cppcheck only checks 12 of 133 configurations. Use --force to check all configurations. [toomanyconfigs][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp:671:0: [31minformation:[39m Skipping configuration '_MSC_BUILD;_MSC_VER' since the value of '_MSC_VER' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked][0m
+  COMPILER_VERSION_MAJOR,
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp:673:0: [31minformation:[39m Skipping configuration '_MSC_BUILD;_MSC_VER' since the value of '_MSC_VER' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked][0m
+  '.', COMPILER_VERSION_MINOR,
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp:675:0: [31minformation:[39m Skipping configuration '_MSC_FULL_VER;_MSC_VER' since the value of '_MSC_FULL_VER' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked][0m
+   '.', COMPILER_VERSION_PATCH,
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp:671:0: [31minformation:[39m Skipping configuration '_MSC_FULL_VER;_MSC_VER' since the value of '_MSC_VER' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked][0m
+  COMPILER_VERSION_MAJOR,
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp:673:0: [31minformation:[39m Skipping configuration '_MSC_FULL_VER;_MSC_VER' since the value of '_MSC_VER' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked][0m
+  '.', COMPILER_VERSION_MINOR,
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:190:11: [31mstyle:[39m The scope of the variable 'shadow_address' can be reduced. [variableScope][0m
+  int8_t *shadow_address;
+          ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:191:10: [31mstyle:[39m The scope of the variable 'shadow_value' can be reduced. [variableScope][0m
+  int8_t shadow_value;
+         ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:104:11: [31mportability:[39m 'address' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer][0m
+  address -= McuASAN_CONFIG_APP_MEM_START;
+          ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:292:6: [31mportability:[39m 'q' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer][0m
+    q++;
+     ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:294:16: [31mportability:[39m 'q' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer][0m
+  *((size_t*)(q-sizeof(size_t))) = size; /* store memory size, needed for the free() part */
+               ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:300:6: [31mportability:[39m 'q' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer][0m
+    q++;
+     ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:307:6: [31mportability:[39m 'q' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer][0m
+    q++;
+     ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:309:11: [31mportability:[39m 'p' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer][0m
+  return p+McuASAN_CONFIG_MALLOC_RED_ZONE_BORDER; /* return pointer to valid memory */
+          ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:318:30: [31mportability:[39m 'p' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer][0m
+  size_t size = *((size_t*)(p-sizeof(size_t))); /* get size */
+                             ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:323:6: [31mportability:[39m 'q' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer][0m
+    q++;
+     ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:325:8: [31mportability:[39m 'p' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer][0m
+  q = p-McuASAN_CONFIG_MALLOC_RED_ZONE_BORDER; /* calculate beginning of malloc()ed block */
+       ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/examples/network_server/client.c:107:27: [31mstyle:[39m Parameter 'argv' can be declared with const [constParameter][0m
+int main(int argc, char **argv)
+                          ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/examples/network_server/server.c:119:19: [31mstyle:[39m The scope of the variable 'connfd' can be reduced. [variableScope][0m
+    int listenfd, connfd;
+                  ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/examples/platformio/src/pio_esp32_idf.c:9:16: [31mstyle:[39m Variable 'status' is assigned a value that is never used. [unreadVariable][0m
+    int status = 0;
+               ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/examples/platformio/src/pio_esp32_idf.c:21:5: [31mstyle:[39m Variable 'status' is assigned a value that is never used. [unreadVariable][0m
+    TEST(pb_encode(&ostream, &TestMessageWithoutOptions_msg, &original));
+    ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/examples/platformio/src/pio_esp32_idf.c:29:5: [31mstyle:[39m Variable 'status' is assigned a value that is never used. [unreadVariable][0m
+    TEST(pb_decode(&istream, &TestMessageWithoutOptions_msg, &decoded));
+    ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/examples/platformio/src/pio_esp32_idf.c:31:5: [31mstyle:[39m Variable 'status' is assigned a value that is never used. [unreadVariable][0m
+    TEST(decoded.number == 45);
+    ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/pb_common.c:0:0: [31minformation:[39m Too many #ifdef configurations - cppcheck only checks 12 of 20 configurations. Use --force to check all configurations. [toomanyconfigs][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/pb_common.c:208:18: [31mstyle:[39m The scope of the variable 'fieldinfo' can be reduced. [variableScope][0m
+        uint32_t fieldinfo;
+                 ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/pb_common.c:255:18: [31mstyle:[39m The scope of the variable 'fieldinfo' can be reduced. [variableScope][0m
+        uint32_t fieldinfo;
+                 ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/pb.h:223:0: [31minformation:[39m Skipping configuration 'PB_BYTE_T_OVERRIDE' since the value of 'PB_BYTE_T_OVERRIDE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked][0m
+typedef PB_BYTE_T_OVERRIDE pb_byte_t;
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/pb.h:82:0: [31merror:[39m No header in #include [preprocessorErrorDirective][0m
+#include PB_SYSTEM_HEADER
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/pb_decode.c:0:0: [31minformation:[39m Too many #ifdef configurations - cppcheck only checks 12 of 25 configurations. Use --force to check all configurations. [toomanyconfigs][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/pb_decode.c:1373:18: [31mstyle:[39m union member 'Anonymous2::fixed32' is never used. [unusedStructMember][0m
+        uint32_t fixed32;
+                 ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/pb_decode.c:1396:18: [31mstyle:[39m union member 'Anonymous3::fixed64' is never used. [unusedStructMember][0m
+        uint64_t fixed64;
+                 ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/pb_decode.c:599:5: [31merror:[39m Common realloc mistake: 'ptr' nulled but not freed upon failure [memleakOnRealloc][0m
+    ptr = pb_realloc(ptr, array_size * data_size);
+    ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/pb_encode.c:0:0: [31minformation:[39m Too many #ifdef configurations - cppcheck only checks 12 of 24 configurations. Use --force to check all configurations. [toomanyconfigs][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/alltypes/decode_alltypes.c:302:19: [31mstyle:[39m The comparison 'status == 0' is always true. [knownConditionTrueFalse][0m
+    return status == 0;
+                  ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/alltypes/decode_alltypes.c:18:18: [2mnote:[0m 'status' is assigned value '0' here.
+    int status = 0;
+                 ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/alltypes/decode_alltypes.c:302:19: [2mnote:[0m The comparison 'status == 0' is always true.
+    return status == 0;
+                  ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/alltypes_callback/decode_alltypes_callback.c:290:29: [31mstyle:[39m Variable 'alltypes.req_uint32.arg' is reassigned a value before the old one has been used. [redundantAssignment][0m
+    alltypes.req_uint32.arg = (void*)1003;
+                            ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/alltypes_callback/decode_alltypes_callback.c:287:29: [2mnote:[0m alltypes.req_uint32.arg is assigned
+    alltypes.req_uint32.arg = (void*)1003;
+                            ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/alltypes_callback/decode_alltypes_callback.c:290:29: [2mnote:[0m alltypes.req_uint32.arg is overwritten
+    alltypes.req_uint32.arg = (void*)1003;
+                            ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/alltypes_callback/decode_alltypes_callback.c:92:79: [31mstyle:[39m Parameter 'arg' can be declared with const [constParameter][0m
+static bool read_submsg(pb_istream_t *stream, const pb_field_t *field, void **arg)
+                                                                              ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/alltypes_callback/encode_alltypes_callback.c:287:29: [31mstyle:[39m Variable 'alltypes.req_uint32.arg' is reassigned a value before the old one has been used. [redundantAssignment][0m
+    alltypes.req_uint32.arg = (void*)1003;
+                            ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/alltypes_callback/encode_alltypes_callback.c:284:29: [2mnote:[0m alltypes.req_uint32.arg is assigned
+    alltypes.req_uint32.arg = (void*)1003;
+                            ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/alltypes_callback/encode_alltypes_callback.c:287:29: [2mnote:[0m alltypes.req_uint32.arg is overwritten
+    alltypes.req_uint32.arg = (void*)1003;
+                            ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/alltypes_pointer/decode_alltypes_pointer.c:171:19: [31mstyle:[39m The comparison 'status == 0' is always true. [knownConditionTrueFalse][0m
+    return status == 0;
+                  ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/alltypes_pointer/decode_alltypes_pointer.c:13:18: [2mnote:[0m 'status' is assigned value '0' here.
+    int status = 0;
+                 ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/alltypes_pointer/decode_alltypes_pointer.c:171:19: [2mnote:[0m The comparison 'status == 0' is always true.
+    return status == 0;
+                  ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/alltypes_proto3/decode_alltypes.c:139:19: [31mstyle:[39m The comparison 'status == 0' is always true. [knownConditionTrueFalse][0m
+    return status == 0;
+                  ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/alltypes_proto3/decode_alltypes.c:18:18: [2mnote:[0m 'status' is assigned value '0' here.
+    int status = 0;
+                 ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/alltypes_proto3/decode_alltypes.c:139:19: [2mnote:[0m The comparison 'status == 0' is always true.
+    return status == 0;
+                  ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/alltypes_proto3_callback/decode_alltypes_callback.c:92:79: [31mstyle:[39m Parameter 'arg' can be declared with const [constParameter][0m
+static bool read_submsg(pb_istream_t *stream, const pb_field_t *field, void **arg)
+                                                                              ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/any_type/decode_any.c:15:10: [31mstyle:[39m The scope of the variable 'status' can be reduced. [variableScope][0m
+    bool status;
+         ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/common/malloc_wrappers.c:71:9: [31merror:[39m Memory leak: buf [memleak][0m
+        return buf + PREFIX_SIZE;
+        ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/common/malloc_wrappers.c:125:17: [31merror:[39m Common realloc mistake: 'buf' nulled but not freed upon failure [memleakOnRealloc][0m
+                buf = realloc(buf, new_rounded);
+                ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/common_unittests/common_unittests.c:19:9: [31merror:[39m There is an unknown macro here somewhere. Configuration is required. If TEST is a macro then please configure it. [unknownMacro][0m
+        TEST(pb_field_iter_begin(&iter, AllTypes_fields, &msg))
+        ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/cxx_callback_datatype/cxx_callback_datatype.cpp:15:31: [31merror:[39m Same iterator is used with containers '*(const std::vector<int>*)field->pData' that are temporaries or defined in different scopes. [iterators3][0m
+  const std::vector<int> &v = *(const std::vector<int> *)field->pData;
+                              ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/cxx_callback_datatype/cxx_callback_datatype.cpp:16:56: [2mnote:[0m Same iterator is used with containers '*(const std::vector<int>*)field->pData' that are temporaries or defined in different scopes.
+  for (std::vector<int>::const_iterator i = v.begin(); i != v.end(); ++i) {
+                                                       ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/cxx_callback_datatype/cxx_callback_datatype.cpp:15:31: [2mnote:[0m Same iterator is used with containers '*(const std::vector<int>*)field->pData' that are temporaries or defined in different scopes.
+  const std::vector<int> &v = *(const std::vector<int> *)field->pData;
+                              ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/cxx_descriptor/message_descriptor.cc:37:14: [31mstyle:[39m The comparison 'status != 0' is always false. [knownConditionTrueFalse][0m
+  if (status != 0) fprintf(stdout, "\n\nSome tests FAILED!\n");
+             ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/cxx_descriptor/message_descriptor.cc:15:16: [2mnote:[0m 'status' is assigned value '0' here.
+  int status = 0;
+               ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/cxx_descriptor/message_descriptor.cc:37:14: [2mnote:[0m The comparison 'status != 0' is always false.
+  if (status != 0) fprintf(stdout, "\n\nSome tests FAILED!\n");
+             ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/cyclic_messages/encode_cyclic_callback.c:63:9: [31mstyle:[39m The scope of the variable 'textlen' can be reduced. [variableScope][0m
+    int textlen;
+        ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/decode_unittests/decode_unittests.c:52:9: [31merror:[39m There is an unknown macro here somewhere. Configuration is required. If TEST is a macro then please configure it. [unknownMacro][0m
+        TEST(pb_read(&stream, buffer2, 6))
+        ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/encode_unittests/encode_unittests.c:79:9: [31merror:[39m There is an unknown macro here somewhere. Configuration is required. If COMMENT is a macro then please configure it. [unknownMacro][0m
+        COMMENT("Test pb_encode_varint")
+        ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/enum_sizes/enum_intsize_unittests.cc:14:14: [31mstyle:[39m The comparison 'status != 0' is always false. [knownConditionTrueFalse][0m
+  if (status != 0) fprintf(stdout, "\n\nSome tests FAILED!\n");
+             ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/enum_sizes/enum_intsize_unittests.cc:7:16: [2mnote:[0m 'status' is assigned value '0' here.
+  int status = 0;
+               ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/enum_sizes/enum_intsize_unittests.cc:14:14: [2mnote:[0m The comparison 'status != 0' is always false.
+  if (status != 0) fprintf(stdout, "\n\nSome tests FAILED!\n");
+             ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/enum_sizes/packed_enum_unittests.c:68:16: [31mstyle:[39m The comparison 'status != 0' is always false. [knownConditionTrueFalse][0m
+    if (status != 0)
+               ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/enum_sizes/packed_enum_unittests.c:10:18: [2mnote:[0m 'status' is assigned value '0' here.
+    int status = 0;
+                 ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/enum_sizes/packed_enum_unittests.c:68:16: [2mnote:[0m The comparison 'status != 0' is always false.
+    if (status != 0)
+               ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/enum_to_string/enum_to_string.c:14:16: [31mstyle:[39m The comparison 'status != 0' is always false. [knownConditionTrueFalse][0m
+    if (status != 0)
+               ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/enum_to_string/enum_to_string.c:7:18: [2mnote:[0m 'status' is assigned value '0' here.
+    int status = 0;
+                 ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/enum_to_string/enum_to_string.c:14:16: [2mnote:[0m The comparison 'status != 0' is always false.
+    if (status != 0)
+               ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/enum_validate/enum_validate.c:14:16: [31mstyle:[39m The comparison 'status != 0' is always false. [knownConditionTrueFalse][0m
+    if (status != 0)
+               ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/enum_validate/enum_validate.c:7:18: [2mnote:[0m 'status' is assigned value '0' here.
+    int status = 0;
+                 ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/enum_validate/enum_validate.c:14:16: [2mnote:[0m The comparison 'status != 0' is always false.
+    if (status != 0)
+               ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/extensions/decode_extensions.c:49:5: [31merror:[39m There is an unknown macro here somewhere. Configuration is required. If TEST is a macro then please configure it. [unknownMacro][0m
+    TEST(ext1.found)
+    ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/field_size_16_proto3/decode_alltypes.c:139:19: [31mstyle:[39m The comparison 'status == 0' is always true. [knownConditionTrueFalse][0m
+    return status == 0;
+                  ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/field_size_16_proto3/decode_alltypes.c:19:18: [2mnote:[0m 'status' is assigned value '0' here.
+    int status = 0;
+                 ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/field_size_16_proto3/decode_alltypes.c:139:19: [2mnote:[0m The comparison 'status == 0' is always true.
+    return status == 0;
+                  ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/fixed_count/fixed_count_unittests.c:23:21: [31mstyle:[39m Variable 'msg_a.data[0]' is reassigned a value before the old one has been used. [redundantAssignment][0m
+      msg_a.data[0] = 2;
+                    ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/fixed_count/fixed_count_unittests.c:22:21: [2mnote:[0m msg_a.data[0] is assigned
+      msg_a.data[0] = 1;
+                    ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/fixed_count/fixed_count_unittests.c:23:21: [2mnote:[0m msg_a.data[0] is overwritten
+      msg_a.data[0] = 2;
+                    ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/fixed_count/fixed_count_unittests.c:24:21: [31mstyle:[39m Variable 'msg_a.data[0]' is reassigned a value before the old one has been used. [redundantAssignment][0m
+      msg_a.data[0] = 3;
+                    ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/fixed_count/fixed_count_unittests.c:23:21: [2mnote:[0m msg_a.data[0] is assigned
+      msg_a.data[0] = 2;
+                    ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/fixed_count/fixed_count_unittests.c:24:21: [2mnote:[0m msg_a.data[0] is overwritten
+      msg_a.data[0] = 3;
+                    ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/fixed_count/fixed_count_unittests.c:186:16: [31mstyle:[39m The comparison 'status != 0' is always false. [knownConditionTrueFalse][0m
+    if (status != 0)
+               ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/fixed_count/fixed_count_unittests.c:11:18: [2mnote:[0m 'status' is assigned value '0' here.
+    int status = 0;
+                 ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/fixed_count/fixed_count_unittests.c:186:16: [2mnote:[0m The comparison 'status != 0' is always false.
+    if (status != 0)
+               ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/float_double_conversion/float_double_conversion.c:21:0: [31minformation:[39m Skipping configuration 'INFINITY;NAN' since the value of 'INFINITY' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked][0m
+      INFINITY,   -INFINITY,         NAN, INFINITY - INFINITY,
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/float_double_conversion/float_double_conversion.c:21:0: [31minformation:[39m Skipping configuration 'INFINITY;NAN' since the value of 'NAN' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked][0m
+      INFINITY,   -INFINITY,         NAN, INFINITY - INFINITY,
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/fuzztest/fuzztest.c:201:25: [31mstyle:[39m The scope of the variable 'checksum3' can be reduced. [variableScope][0m
+    uint32_t checksum2, checksum3;
+                        ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/fuzztest/fuzztest.c:202:21: [31mstyle:[39m The scope of the variable 'msglen3' can be reduced. [variableScope][0m
+    size_t msglen2, msglen3;
+                    ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/fuzztest/fuzztest.c:426:9: [31mstyle:[39m The scope of the variable 'i' can be reduced. [variableScope][0m
+    int i;
+        ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/fuzztest/fuzztest.c:427:9: [31mstyle:[39m The scope of the variable 'iterations' can be reduced. [variableScope][0m
+    int iterations;
+        ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/fuzztest/fuzztest.c:144:82: [31mstyle:[39m Parameter 'arg' can be declared with const [constParameter][0m
+static bool field_callback(pb_istream_t *stream, const pb_field_t *field, void **arg)
+                                                                                 ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/fuzztest/fuzztest.c:152:83: [31mstyle:[39m Parameter 'arg' can be declared with const [constParameter][0m
+static bool submsg_callback(pb_istream_t *stream, const pb_field_t *field, void **arg)
+                                                                                  ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/fuzztest/random_data.c:120:22: [31mstyle:[39m Local variable 'buf' shadows outer argument [shadowArgument][0m
+            uint8_t *buf;
+                     ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/fuzztest/random_data.c:87:36: [2mnote:[0m Shadowed declaration
+size_t rand_fill_protobuf(uint8_t *buf, size_t min_bytes, size_t max_bytes, int min_tag)
+                                   ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/fuzztest/random_data.c:120:22: [2mnote:[0m Shadow variable
+            uint8_t *buf;
+                     ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/infinity_nan/infinity_nan_test.c:40:19: [31mstyle:[39m The comparison 'status == 0' is always true. [knownConditionTrueFalse][0m
+    return status == 0;
+                  ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/infinity_nan/infinity_nan_test.c:10:18: [2mnote:[0m 'status' is assigned value '0' here.
+    int status = 0;
+                 ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/infinity_nan/infinity_nan_test.c:40:19: [2mnote:[0m The comparison 'status == 0' is always true.
+    return status == 0;
+                  ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/inline/inline_unittests.c:69:16: [31mstyle:[39m The comparison 'status != 0' is always false. [knownConditionTrueFalse][0m
+    if (status != 0)
+               ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/inline/inline_unittests.c:10:18: [2mnote:[0m 'status' is assigned value '0' here.
+    int status = 0;
+                 ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/inline/inline_unittests.c:69:16: [2mnote:[0m The comparison 'status != 0' is always false.
+    if (status != 0)
+               ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/intsizes/intsizes_unittests.c:141:16: [31mstyle:[39m The comparison 'status != 0' is always false. [knownConditionTrueFalse][0m
+    if (status != 0)
+               ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/intsizes/intsizes_unittests.c:72:18: [2mnote:[0m 'status' is assigned value '0' here.
+    int status = 0;
+                 ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/intsizes/intsizes_unittests.c:141:16: [2mnote:[0m The comparison 'status != 0' is always false.
+    if (status != 0)
+               ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/regression/issue_172/msg_size.c:3:1: [31merror:[39m There is an unknown macro here somewhere. Configuration is required. If PB_STATIC_ASSERT is a macro then please configure it. [unknownMacro][0m
+PB_STATIC_ASSERT(testmessage_size >= 1+1+1+1+16, TESTMESSAGE_SIZE_IS_WRONG)
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/regression/issue_249/test.c:20:78: [31mstyle:[39m Parameter 'arg' can be declared with const [constParameter][0m
+static bool read_array(pb_istream_t *stream, const pb_field_t *field, void **arg)
+                                                                             ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/regression/issue_504/test.c:35:13: [31merror:[39m Memory leak: pStr [memleak][0m
+            return 1;
+            ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/regression/issue_838/enum_to_string.cxx:14:16: [31mstyle:[39m The comparison 'status != 0' is always false. [knownConditionTrueFalse][0m
+    if (status != 0)
+               ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/regression/issue_838/enum_to_string.cxx:7:18: [2mnote:[0m 'status' is assigned value '0' here.
+    int status = 0;
+                 ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/regression/issue_838/enum_to_string.cxx:14:16: [2mnote:[0m The comparison 'status != 0' is always false.
+    if (status != 0)
+               ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/typename_mangling/test_flatten.c:17:23: [31mstyle:[39m Variable 'msg.short_if_none' is assigned a value that is never used. [unreadVariable][0m
+    msg.short_if_none = ShortIfNone_IfNone_A;
+                      ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/typename_mangling/test_flatten.c:18:32: [31mstyle:[39m Variable 'msg.short_if_strip_package' is assigned a value that is never used. [unreadVariable][0m
+    msg.short_if_strip_package = ShortIfStripPackage_IfPackage_A;
+                               ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/typename_mangling/test_flatten.c:19:26: [31mstyle:[39m Variable 'msg.short_if_flatten' is assigned a value that is never used. [unreadVariable][0m
+    msg.short_if_flatten = IfFlatten_A;
+                         ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/typename_mangling/test_package_initials.c:14:23: [31mstyle:[39m Variable 'msg.short_if_none' is assigned a value that is never used. [unreadVariable][0m
+    msg.short_if_none = cen_TopLevelMessage_ShortIfNone_IfNone_A;
+                      ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/typename_mangling/test_package_initials.c:15:32: [31mstyle:[39m Variable 'msg.short_if_strip_package' is assigned a value that is never used. [unreadVariable][0m
+    msg.short_if_strip_package = cen_TopLevelMessage_ShortIfStripPackage_IfPackage_A;
+                               ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/typename_mangling/test_package_initials.c:16:26: [31mstyle:[39m Variable 'msg.short_if_flatten' is assigned a value that is never used. [unreadVariable][0m
+    msg.short_if_flatten = cen_TopLevelMessage_ShortIfFlatten_IfFlatten_A;
+                         ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/typename_mangling/test_replace_package.c:20:8: [31mstyle:[39m Variable 'e2' is reassigned a value before the old one has been used. [redundantAssignment][0m
+    e2 = _EnumA_MIN;
+       ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/typename_mangling/test_replace_package.c:19:8: [2mnote:[0m e2 is assigned
+    e2 = _package_a_EnumA_MIN;
+       ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/typename_mangling/test_replace_package.c:20:8: [2mnote:[0m e2 is overwritten
+    e2 = _EnumA_MIN;
+       ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/typename_mangling/test_replace_package.c:21:8: [31mstyle:[39m Variable 'e2' is reassigned a value before the old one has been used. [redundantAssignment][0m
+    e2 = _package_a_EnumA_MAX;
+       ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/typename_mangling/test_replace_package.c:20:8: [2mnote:[0m e2 is assigned
+    e2 = _EnumA_MIN;
+       ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/typename_mangling/test_replace_package.c:21:8: [2mnote:[0m e2 is overwritten
+    e2 = _package_a_EnumA_MAX;
+       ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/typename_mangling/test_replace_package.c:22:8: [31mstyle:[39m Variable 'e2' is reassigned a value before the old one has been used. [redundantAssignment][0m
+    e2 = _EnumA_MAX;
+       ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/typename_mangling/test_replace_package.c:21:8: [2mnote:[0m e2 is assigned
+    e2 = _package_a_EnumA_MAX;
+       ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/typename_mangling/test_replace_package.c:22:8: [2mnote:[0m e2 is overwritten
+    e2 = _EnumA_MAX;
+       ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/typename_mangling/test_replace_package.c:23:8: [31mstyle:[39m Variable 'e2' is reassigned a value before the old one has been used. [redundantAssignment][0m
+    e2 = _package_a_EnumA_ARRAYSIZE;
+       ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/typename_mangling/test_replace_package.c:22:8: [2mnote:[0m e2 is assigned
+    e2 = _EnumA_MAX;
+       ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/typename_mangling/test_replace_package.c:23:8: [2mnote:[0m e2 is overwritten
+    e2 = _package_a_EnumA_ARRAYSIZE;
+       ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/typename_mangling/test_replace_package.c:24:8: [31mstyle:[39m Variable 'e2' is reassigned a value before the old one has been used. [redundantAssignment][0m
+    e2 = _EnumA_ARRAYSIZE;
+       ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/typename_mangling/test_replace_package.c:23:8: [2mnote:[0m e2 is assigned
+    e2 = _package_a_EnumA_ARRAYSIZE;
+       ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/typename_mangling/test_replace_package.c:24:8: [2mnote:[0m e2 is overwritten
+    e2 = _EnumA_ARRAYSIZE;
+       ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/typename_mangling/test_strip_package.c:14:23: [31mstyle:[39m Variable 'msg.short_if_none' is assigned a value that is never used. [unreadVariable][0m
+    msg.short_if_none = TopLevelMessage_ShortIfNone_IfNone_A;
+                      ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/typename_mangling/test_strip_package.c:15:32: [31mstyle:[39m Variable 'msg.short_if_strip_package' is assigned a value that is never used. [unreadVariable][0m
+    msg.short_if_strip_package = TopLevelMessage_IfPackage_A;
+                               ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/typename_mangling/test_strip_package.c:16:26: [31mstyle:[39m Variable 'msg.short_if_flatten' is assigned a value that is never used. [unreadVariable][0m
+    msg.short_if_flatten = TopLevelMessage_ShortIfFlatten_IfFlatten_A;
+                         ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/typename_mangling/test_strip_package_dependencies.c:20:8: [31mstyle:[39m Variable 'e2' is reassigned a value before the old one has been used. [redundantAssignment][0m
+    e2 = _EnumA_MIN;
+       ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/typename_mangling/test_strip_package_dependencies.c:19:8: [2mnote:[0m e2 is assigned
+    e2 = _package_a_EnumA_MIN;
+       ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/typename_mangling/test_strip_package_dependencies.c:20:8: [2mnote:[0m e2 is overwritten
+    e2 = _EnumA_MIN;
+       ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/typename_mangling/test_strip_package_dependencies.c:21:8: [31mstyle:[39m Variable 'e2' is reassigned a value before the old one has been used. [redundantAssignment][0m
+    e2 = _package_a_EnumA_MAX;
+       ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/typename_mangling/test_strip_package_dependencies.c:20:8: [2mnote:[0m e2 is assigned
+    e2 = _EnumA_MIN;
+       ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/typename_mangling/test_strip_package_dependencies.c:21:8: [2mnote:[0m e2 is overwritten
+    e2 = _package_a_EnumA_MAX;
+       ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/typename_mangling/test_strip_package_dependencies.c:22:8: [31mstyle:[39m Variable 'e2' is reassigned a value before the old one has been used. [redundantAssignment][0m
+    e2 = _EnumA_MAX;
+       ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/typename_mangling/test_strip_package_dependencies.c:21:8: [2mnote:[0m e2 is assigned
+    e2 = _package_a_EnumA_MAX;
+       ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/typename_mangling/test_strip_package_dependencies.c:22:8: [2mnote:[0m e2 is overwritten
+    e2 = _EnumA_MAX;
+       ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/typename_mangling/test_strip_package_dependencies.c:23:8: [31mstyle:[39m Variable 'e2' is reassigned a value before the old one has been used. [redundantAssignment][0m
+    e2 = _package_a_EnumA_ARRAYSIZE;
+       ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/typename_mangling/test_strip_package_dependencies.c:22:8: [2mnote:[0m e2 is assigned
+    e2 = _EnumA_MAX;
+       ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/typename_mangling/test_strip_package_dependencies.c:23:8: [2mnote:[0m e2 is overwritten
+    e2 = _package_a_EnumA_ARRAYSIZE;
+       ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/typename_mangling/test_strip_package_dependencies.c:24:8: [31mstyle:[39m Variable 'e2' is reassigned a value before the old one has been used. [redundantAssignment][0m
+    e2 = _EnumA_ARRAYSIZE;
+       ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/typename_mangling/test_strip_package_dependencies.c:23:8: [2mnote:[0m e2 is assigned
+    e2 = _package_a_EnumA_ARRAYSIZE;
+       ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/typename_mangling/test_strip_package_dependencies.c:24:8: [2mnote:[0m e2 is overwritten
+    e2 = _EnumA_ARRAYSIZE;
+       ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/without_64bit/decode_alltypes.c:155:19: [31mstyle:[39m The comparison 'status == 0' is always true. [knownConditionTrueFalse][0m
+    return status == 0;
+                  ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/without_64bit/decode_alltypes.c:20:18: [2mnote:[0m 'status' is assigned value '0' here.
+    int status = 0;
+                 ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/without_64bit/decode_alltypes.c:155:19: [2mnote:[0m The comparison 'status == 0' is always true.
+    return status == 0;
+                  ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/wireless/wifi_station/service/update_firmware/update_firmware.c:50:16: [31mstyle:[39m The scope of the variable 'output_len' can be reduced. [variableScope][0m
+    static int output_len;       // 已接收数据的长度
+               ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/pb_encode.c:58:18: [31merror:[39m Null pointer dereference: buf [ctunullpointer][0m
+    memcpy(dest, buf, count * sizeof(pb_byte_t));
+                 ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/pb_encode.c:178:28: [2mnote:[0m Calling function pb_write, 2nd argument is null
+            return pb_write(stream, NULL, size); /* Just sizing.. */
+                           ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/pb_encode.c:95:14: [2mnote:[0m Calling function buf_write, 2nd argument is null
+        if (!buf_write(stream, buf, count))
+             ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/pb_encode.c:58:18: [2mnote:[0m Dereferencing argument buf that is null
+    memcpy(dest, buf, count * sizeof(pb_byte_t));
+                 ^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/examples/network_server/client.c:30:0: [31mstyle:[39m The function 'ListFilesResponse_callback' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/oneof_callback/decode_oneof.c:16:0: [31mstyle:[39m The function 'SubMsg3_callback' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/cxx_callback_datatype/cxx_callback_datatype.cpp:39:0: [31mstyle:[39m The function 'TestMessage_callback' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:314:0: [31mstyle:[39m The function '__asan_free' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:75:0: [31mstyle:[39m The function '__asan_handle_no_return' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:249:0: [31mstyle:[39m The function '__asan_load1_noabort' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:241:0: [31mstyle:[39m The function '__asan_load2_noabort' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:232:0: [31mstyle:[39m The function '__asan_load4_noabort' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:224:0: [31mstyle:[39m The function '__asan_load8_noabort' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:213:0: [31mstyle:[39m The function '__asan_loadN_noabort' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:279:0: [31mstyle:[39m The function '__asan_malloc' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:76:0: [31mstyle:[39m The function '__asan_option_detect_stack_use_after_return' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:79:0: [31mstyle:[39m The function '__asan_register_globals' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:54:0: [31mstyle:[39m The function '__asan_report_load1' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:57:0: [31mstyle:[39m The function '__asan_report_load2' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:60:0: [31mstyle:[39m The function '__asan_report_load4' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:63:0: [31mstyle:[39m The function '__asan_report_load_n' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:42:0: [31mstyle:[39m The function '__asan_report_store1' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:45:0: [31mstyle:[39m The function '__asan_report_store2' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:48:0: [31mstyle:[39m The function '__asan_report_store4' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:51:0: [31mstyle:[39m The function '__asan_report_store_n' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:71:0: [31mstyle:[39m The function '__asan_stack_malloc_1' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:72:0: [31mstyle:[39m The function '__asan_stack_malloc_2' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:73:0: [31mstyle:[39m The function '__asan_stack_malloc_3' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:74:0: [31mstyle:[39m The function '__asan_stack_malloc_4' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:254:0: [31mstyle:[39m The function '__asan_store1_noabort' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:245:0: [31mstyle:[39m The function '__asan_store2_noabort' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:236:0: [31mstyle:[39m The function '__asan_store4_noabort' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:228:0: [31mstyle:[39m The function '__asan_store8_noabort' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:218:0: [31mstyle:[39m The function '__asan_storeN_noabort' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:80:0: [31mstyle:[39m The function '__asan_unregister_globals' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/asan/McuASAN.c:81:0: [31mstyle:[39m The function '__asan_version_mismatch_check_v8' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/crc/crc32.c:86:0: [31mstyle:[39m The function 'crc32_append' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/msgid/decode_msgid.c:23:0: [31mstyle:[39m The function 'handle_MyMessage1' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/msgid/decode_msgid.c:34:0: [31mstyle:[39m The function 'handle_MyMessage2' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/msgid/decode_msgid.c:46:0: [31mstyle:[39m The function 'handle_MyMessage3' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/pb_common.c:300:0: [31mstyle:[39m The function 'pb_default_field_callback' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/pb_encode.c:536:0: [31mstyle:[39m The function 'pb_encode_ex' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/pb_common.c:334:0: [31mstyle:[39m The function 'pb_validate_utf8' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/site_scons/platforms/stm32/vectors.c:36:0: [31mstyle:[39m The function 'ramboot' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/third_lib/nanopb/tests/common/malloc_wrappers.c:101:0: [31mstyle:[39m The function 'realloc_with_check' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/wireless/wifi_station/service/sync_time/sync_time.c:158:0: [31mstyle:[39m The function 'sync_time_init' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/cableio/uart/uart_manager.c:185:0: [31mstyle:[39m The function 'uart_manager_init' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/wireless/wifi_station/service/update_firmware/update_firmware.c:382:0: [31mstyle:[39m The function 'update_fw_init' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/wireless/wifi_station/wifi_station.c:38:0: [31mstyle:[39m The function 'wifi_event_handler' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/wireless/wifi_station/wifi_station.c:31:0: [31mstyle:[39m The function 'wifi_retry_timer_handler' is never used. [unusedFunction][0m
+
+^
+[1m/home/hubert/esp32c3-upgrade/Wireless_ESP32C3/main/wireless/wifi_station/wifi_station.c:147:0: [31mstyle:[39m The function 'wifi_station_set_disconnected_cb' is never used. [unusedFunction][0m
+
+^

@@ -13,14 +13,29 @@
 #include "crc32.h"
 #include "update_firmware.h"
 #include "McuASAN.h"
+#include "string.h"
 
 
 static void trigger_asan_error() 
 {
-  int *p = (int *)malloc(sizeof(int));
+  /* use after free - UAF error */
+  uint8_t *p = (uint8_t *) malloc (sizeof(uint8_t));
   *p = 42;
   free(p);
-  *p = 43;  // 错误:在释放内存后使用
+  *p = 43;
+
+  /* buffer overflow eror - out of bounds */
+  // int offset = 1;
+
+  // uint32_t *buf = (uint32_t *) malloc (sizeof(uint32_t) * 100);
+  // if (buf == NULL) {
+  //   ESP_LOGE("ASAN", "Failed to allocate memory");
+  // }
+  // buf[0] = 0;
+  // buf[99 + offset] = 1;
+  // free(buf);
+
+
 }
 
 
@@ -30,7 +45,7 @@ void app_main(void)
     McuASAN_Init();
 
     // 触发一个 ASAN 错误
-     trigger_asan_error();
+    trigger_asan_error();
 
     // 初始化板级资源nvs
     board_init();
@@ -39,18 +54,20 @@ void app_main(void)
     ESP_ERROR_CHECK(esp_event_loop_create_default());
 
     // 初始化UART模块
-    uart_manager_init();
+    // uart_manager_init();
 
     // 初始化天气模块
-    weather_manager_init();
+    //weather_manager_init();
 
     // 时间同步功能
-    sync_time_init();
+    // sync_time_init();
 
     // 固件升级功能
-    update_fw_init();
+    //update_fw_init();
 
     // 初始化WIFI模块
-    wifi_station_init();
+    //wifi_station_init();
 
 }
+
+

@@ -32,6 +32,9 @@ void __asan_free(void *p);
  */
 void McuASAN_Init(void);
 
+// void print_shadow_info(void);
+
+
 #ifdef __cplusplus
 }  /* extern "C" */
 #endif

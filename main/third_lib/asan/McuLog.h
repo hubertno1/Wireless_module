@@ -7,7 +7,7 @@
 extern "C" {
 #endif
 
-#define LOG_TAG "MCU_LOG"
+#define LOG_TAG "MEMORY DEBUG"
 
 #define McuLog_fatal(format, ...)   ESP_LOGE(LOG_TAG, format, ##__VA_ARGS__)
 

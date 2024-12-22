@@ -7,10 +7,11 @@
 #include "freertos/FreeRTOS.h"
 #include "freertos/timers.h"
 #include "wifi_station.h"
+#include "McuASAN.h"
 
 
-#define DEFAULT_WIFI_SSID           "CU_2-403"
-#define DEFAULT_WIFI_PASSWORD       "88888888"
+#define DEFAULT_WIFI_SSID           "yhc666"
+#define DEFAULT_WIFI_PASSWORD       "yc123312"
 
 // 测试用wifi，便于利用wireshark抓包分析
 //#define DEFAULT_WIFI_SSID           "laptop-y7000"
@@ -40,7 +41,7 @@ static void wifi_event_handler(void* arg, esp_event_base_t event_base,int32_t ev
     // 调用esp_wifi_connect()开启连接
     if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_START)
     {
-        ESP_LOGI(TAG, "Connecting to AP" DEFAULT_WIFI_SSID);
+        ESP_LOGI(TAG, "Connecting to AP " DEFAULT_WIFI_SSID);
         esp_wifi_connect();
     }
     // 被触发当wifi sta模式连接断开
@@ -61,7 +62,11 @@ static void wifi_event_handler(void* arg, esp_event_base_t event_base,int32_t ev
     else if (event_base == IP_EVENT && event_id == IP_EVENT_STA_GOT_IP)
     {
         ip_event_got_ip_t* event = (ip_event_got_ip_t*) event_data;
-        ESP_LOGI(TAG, "Got IP:" IPSTR, IP2STR(&event->ip_info.ip));
+
+        // ESP_LOGE("ASAN", "event_data addr: %p\n", event_data);
+        // ESP_LOGE("ASAN","&event->ip_info addr: %p\n", &event->ip_info);
+        // ESP_LOGE("ASAN","&event->ip_info.ip addr: %p\n", &event->ip_info.ip);
+        ESP_LOGI(TAG, "Got IP: " "%d.%d.%d.%d", IP2STR(&event->ip_info.ip));
 
         // 调用所有注册的回调函数
         for (int  i = 0; i < wifi_station_connected_cb_cnt; i++)
@@ -71,7 +76,7 @@ static void wifi_event_handler(void* arg, esp_event_base_t event_base,int32_t ev
                 wifi_station_connected_cbs[i]();
         }
         
-        //if (wifi_station_connected_cb)
+        // if (wifi_station_connected_cb)
         //    wifi_station_connected_cb(); 
     }
 
@@ -123,10 +128,24 @@ void wifi_station_init(void)
 
 void wifi_station_set_connected_cb(wifi_station_connected_cb_t cb)
 {
-
+    ESP_LOGW("ASAN_DEBUG", "Adding cb: %p, current count: %d", cb, wifi_station_connected_cb_cnt);
+    ESP_LOGW("ASAN_DEBUG", "Array base addr: %p", wifi_station_connected_cbs);
     // 添加回调函数到数组中
-    wifi_station_connected_cbs[wifi_station_connected_cb_cnt++] = cb;
+    if (wifi_station_connected_cb_cnt >= MAX_WIFI_CONNECTED_CALLBACKS)
+    {
+        ESP_LOGE(TAG, "Exceed max callback count");
+        return;
+    }
 
+    if (cb == NULL) {
+        ESP_LOGE(TAG, "Invalid callback function");
+    }
+
+    ESP_LOGW("ASAN_DEBUG", "Counter variable addr: %p", &wifi_station_connected_cb_cnt);
+    wifi_station_connected_cbs[wifi_station_connected_cb_cnt] = cb;
+    wifi_station_connected_cb_cnt++;
+
+    ESP_LOGI(TAG, "Successfully added callback at idx %d", wifi_station_connected_cb_cnt - 1);
 }
 
 void wifi_station_set_disconnected_cb(wifi_station_disconnected_cb_t cb)

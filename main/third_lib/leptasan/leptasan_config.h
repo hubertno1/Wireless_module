@@ -34,13 +34,13 @@
 #define LEPTASAN_CONFIG_SHADOW_SIZE (LEPTASAN_CONFIG_APP_SIZE / 8)
 
 /**
- * @brief Must be 8的倍数
- * 
+ * @brief Size of the red zone border in bytes. 
+ *        Must be a multiple of 8 bytes to maintain alignment requirements.
  */
 #define LEPTASAN_CONFIG_RED_ZONE_BORDER_SIZE    (8 * 2)
 
 
-#define LEPTASAN_CONFIG_FREE_QUARANTINE_LIST_SIZE  (0)
+#define LEPTASAN_CONFIG_FREE_QUARANTINE_LIST_SIZE  (3)
 
 #endif /* __LEPTASAN_CONFIG_H__ */
 

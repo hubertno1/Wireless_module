@@ -370,12 +370,14 @@ void __leptasan_free(void *p)
     /* 1. Get the size needed to be freed */
     size_t size = *((size_t *)((uintptr_t)p_valid_memory - sizeof(size_t)));
 
-    // Poison the valid memory before freeing
+    /* 2. Poison the valid memory before freeing */
     leptasan_poison_shadow_region(p_valid_memory, ALIGN(size, 8));
 
-    // Prepare the pointer for free
+    /* 3. Prepare the pointer for free */
     void *p_first_red_zone = (void *)((uintptr_t)p_valid_memory - LEPTASAN_CONFIG_RED_ZONE_BORDER_SIZE);
 
+    /* if the pointer is not in the quarantine list, free it immediately */
+    /* if the pointer is in the quarantine list, free it after reach the LEPTASAN_CONFIG_FREE_QUARANTINE_LIST_SIZE */
     #if LEPTASAN_CONFIG_FREE_QUARANTINE_LIST_SIZE > 0
         leptasan_free_quarantine_list[leptasan_free_quarantine_list_idx] = p_first_red_zone;
         leptasan_free_quarantine_list_idx++;

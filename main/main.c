@@ -12,37 +12,32 @@
 #include "sync_time.h"
 #include "crc32.h"
 #include "update_firmware.h"
-#include "McuASAN.h"
-#include "string.h"
+#include "leptasan.h"
 
 
 static void trigger_asan_error() 
 {
-  /* use after free - UAF error */
-  uint8_t *p = (uint8_t *) malloc (sizeof(uint8_t));
-  *p = 42;
-  free(p);
-  *p = 43;
+    /* use after free - UAF error */
+    uint8_t *p = (uint8_t *)malloc(sizeof(uint8_t));
+    *p = 42;
+    free(p);
+    *p = 43;
 
-  /* buffer overflow eror - out of bounds */
-  // int offset = 1;
-
-  // uint32_t *buf = (uint32_t *) malloc (sizeof(uint32_t) * 100);
-  // if (buf == NULL) {
-  //   ESP_LOGE("ASAN", "Failed to allocate memory");
-  // }
-  // buf[0] = 0;
-  // buf[99 + offset] = 1;
-  // free(buf);
-
-
+    /* buffer overflow eror - out of bounds */
+    //   uint32_t *buf = (uint32_t *) malloc (sizeof(uint32_t) * 100);
+    //   if (buf == NULL) {
+    //     ESP_LOGE("ASAN", "Failed to allocate memory");
+    //   }
+    //   buf[0] = 0;
+    //   buf[100] = 1;     // buffer overflow error triggered!
+    
 }
 
 
 void app_main(void)
 {
     // to do: 移植asan
-    McuASAN_Init();
+    leptasan_init_shadow();
 
     // 触发一个 ASAN 错误
     trigger_asan_error();

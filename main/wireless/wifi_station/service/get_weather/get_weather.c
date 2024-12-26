@@ -11,7 +11,7 @@
 #include "wifi_station.h"
 #include "freertos/semphr.h"
 #include "esp_crt_bundle.h"
-#include "McuASAN.c"
+// #include "McuASAN.c"
 
 
 static SemaphoreHandle_t location_semaphore = NULL;     // 用于同步位置和天气任务的信号量

@@ -1,7 +1,6 @@
 set(srcs "main.c")
 set(include_dirs ".")
 
-# 
 file(GLOB CABLEIO_SRCS "cableio/*.c"
                        "cableio/uart/*.c")
 list(APPEND srcs ${CABLEIO_SRCS})
@@ -43,10 +42,11 @@ file(GLOB CRC_SRCS "third_lib/crc/*.c")
 list(APPEND srcs ${CRC_SRCS})
 list(APPEND include_dirs "third_lib/crc")
 
-# 添加 ASAN 库的源文件和包含目录
-file(GLOB ASAN_SRCS "third_lib/asan/*.c")
-list(APPEND srcs ${ASAN_SRCS})
-list(APPEND include_dirs "third_lib/asan")
+
+# 添加 leptasan 库的源文件和包含目录
+file(GLOB LEPTASAN_SRCS "third_lib/leptasan/*.c")
+list(APPEND srcs ${LEPTASAN_SRCS})
+list(APPEND include_dirs "third_lib/leptasan")
 
 # 这里移除了引号
 idf_component_register(SRCS ${srcs} INCLUDE_DIRS ${include_dirs})
@@ -55,13 +55,7 @@ idf_component_register(SRCS ${srcs} INCLUDE_DIRS ${include_dirs})
 set_source_files_properties("main.c" 
     PROPERTIES COMPILE_FLAGS "-fsanitize=kernel-address  -g -save-temps -fno-inline -O0")
 
-#set_source_files_properties("wireless/wifi_station/service/get_weather/get_weather.c"
-#    PROPERTIES COMPILE_FLAGS "-fsanitize=kernel-address -O0")
-
-#set_source_files_properties("wireless/wifi_station/wifi_station.c"
-#   PROPERTIES COMPILE_FLAGS "-fsanitize=kernel-address -O0")    
-
-set_source_files_properties("third_lib/asan/McuASAN.c"
-    PROPERTIES COMPILE_FLAGS "-g -save-temps")
+#set_source_files_properties("third_lib/leptasan/leptasan.c"
+#    PROPERTIES COMPILE_FLAGS "-g -save-temps")
 
 

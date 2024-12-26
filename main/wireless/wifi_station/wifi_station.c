@@ -7,7 +7,7 @@
 #include "freertos/FreeRTOS.h"
 #include "freertos/timers.h"
 #include "wifi_station.h"
-#include "McuASAN.h"
+// #include "McuASAN.h"
 
 
 #define DEFAULT_WIFI_SSID           "yhc666"
